@@ -27,16 +27,29 @@
 }
 .search-button{
     height: 40px;
-    width: 60px;
+    width: 66px;
+    background-color: whitesmoke;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(197, 197, 197) ;
+    margin-left: -1px;
+    margin-right: 10px;
+}
+.search-icon{
+    height: 25px;
+    margin-top: 5px;
 }
 .search-box{
     flex: 1;
-    height: 34px;
+    height: 36px;
     padding-left: 10px;
     font-size: 16px;
     border-width: 1px;
     border-style: solid;
     border-color: rgb(209, 209, 209);
+    border-radius: 2px;
+    box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05); /*inset helps put the shadow inside the search box*/
+    width: 0; /* makes the search box to shrink all the way*/
 }
 .search-box::placeholder{   /* this is how to target a placeholder element*/
     font-family: Roboto , Arial;
@@ -44,9 +57,36 @@
 }
 .voice-search-button{
     height: 40px;
-    width: 60px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: whitesmoke;
 }
+.voice-search-icon{ /*this targets the search icons not the button*/
+    height: 24px;
+    margin-top: 4px;
+   
+} 
+
 .right-section{
-    background-color: lightgreen;
-    width: 200px;
+    width: 180px;
+    margin-right: 24px;
+    display: flex; /*aligns items in a vertical position*/
+    align-items: center; /*aligns items in the center vertically*/
+    justify-content: space-between; /*put space between icons evenly*/
+    flex-shrink: 0; /*prevents the right from shrinking all the way*/
+}
+
+.upload-icons{
+    height: 24px;
+}
+.youtube-apps-icons{
+    height: 24px;
+}
+.notifications-icon{
+    height: 24px;
+}
+.current-user-pictures{
+     height: 32px;
+     border-radius: 16px; /*half of the value of height will make a circle*/
 }
